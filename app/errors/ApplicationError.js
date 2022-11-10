@@ -1,4 +1,5 @@
 class ApplicationError extends Error {
+  // eslint-disable-next-line class-methods-use-this
   get details() {
     return {};
   }
@@ -9,8 +10,8 @@ class ApplicationError extends Error {
         name: this.name,
         message: this.message,
         details: this.details,
-      }
-    }
+      },
+    };
   }
 }
 
